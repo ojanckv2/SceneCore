@@ -3,7 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Ojanck.Core
+namespace Ojanck.Core.Scene
 {
     [RequireComponent(typeof(CanvasGroup))]
     public class SceneServiceView : MonoBehaviour

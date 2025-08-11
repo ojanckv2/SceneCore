@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Ojanck.Core
+namespace Ojanck.Core.Scene
 {
     public abstract class SceneService : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Ojanck.Core
+namespace Ojanck.Core.Scene
 {
     public class SceneCoreView : SceneService
     {

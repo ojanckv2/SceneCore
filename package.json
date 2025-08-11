@@ -1,5 +1,5 @@
 {
-  "name": "com.ojanck.core.scene",
+  "name": "com.Ojanck.Core.Scene.scene",
   "version": "0.0.1",
   "displayName": "Scene Core",
   "description": "A core manager for a scene.",

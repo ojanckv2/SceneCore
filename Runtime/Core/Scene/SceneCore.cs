@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Ojanck.Core
+namespace Ojanck.Core.Scene
 {
     public class SceneCore : MonoBehaviour
     {
