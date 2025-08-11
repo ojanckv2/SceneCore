@@ -1,0 +1,12 @@
+{
+  "name": "com.ojanck.core.scene",
+  "version": "0.0.1",
+  "displayName": "Scene Core",
+  "description": "A core manager for a scene.",
+  "unity": "2021.2+",
+  "author": {
+    "name": "Ojanck",
+    "email": "ojan.fuad@gmail.com",
+    "url": "https://www.github.com/ojanckv2"
+  }
+}
