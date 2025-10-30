@@ -24,6 +24,8 @@ namespace Ojanck.Core.Scene
         public UnityEvent onShow = new();
         public UnityEvent onHide = new();
 
+        private IEnumerator currentFadeCoroutine;
+
         public void Activate()
         {
             if (isActive) return;
@@ -52,12 +54,22 @@ namespace Ojanck.Core.Scene
 
         public void Show()
         {
-            StartCoroutine(FadeIn());
+            if (currentFadeCoroutine != null)
+            {
+                StopCoroutine(currentFadeCoroutine);
+            }
+            currentFadeCoroutine = FadeIn();
+            StartCoroutine(currentFadeCoroutine);
         }
 
         public void Hide()
         {
-            StartCoroutine(FadeOut());
+            if (currentFadeCoroutine != null)
+            {
+                StopCoroutine(currentFadeCoroutine);
+            }
+            currentFadeCoroutine = FadeOut();
+            StartCoroutine(currentFadeCoroutine);
         }
 
         private void SnapHide()
